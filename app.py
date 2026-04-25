@@ -6,7 +6,7 @@ st.set_page_config(page_title="Docuwise", page_icon="📄")
 st.title("📄 Docuwise - PDF سے بات کریں")
 st.write("اپنی PDF فائل اپلوڈ کریں اور اس سے سوال پوچھیں")
 
-st.file_uploader("PDF فائل چنیں", type="pdf")
+ooplodad-file =st.file_uploader("PDF فائل چنیں", type="pdf")
 
 if uploaded_file is not None:
     pdf_reader = PdfReader(uploaded_file)
@@ -18,9 +18,9 @@ if uploaded_file is not None:
     
     question = st.text_input("PDF کے بارے میں سوال پوچھیں:")
     
-    if question: gv
+    if question: 
         st.write("*جواب:*")
-        if question.lower() in text.lower():v
+        if question.lower() in text.lower():
             st.info("آپ کا سوال PDF میں موجود ہے۔")
         else:
             st.warning("معذرت، یہ معلومات PDF میں نہیں ملی۔")
