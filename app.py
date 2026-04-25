@@ -6,7 +6,7 @@ st.set_page_config(page_title="Docuwise", page_icon="📄")
 st.title("📄 Docuwise - PDF سے بات کریں")
 st.write("اپنی PDF فائل اپلوڈ کریں اور اس سے سوال پوچھیں")
 
-ooplodad-file =st.file_uploader("PDF فائل چنیں", type="pdf")
+uploadad_file =st.file_uploader("PDF فائل چنیں", type="pdf")
 
 if uploaded_file is not None:
     pdf_reader = PdfReader(uploaded_file)
